@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 云朵形状 -->
+    <path d="M48 28C48 19.2 40.8 12 32 12C24.4 12 18 17.2 16.4 24C9.6 24.8 4 30.8 4 38C4 45.6 10.4 52 18 52H46C52.4 52 58 46.4 58 40C58 33.6 52.4 28 46 28H48Z" 
+          stroke="#4f46e5" 
+          stroke-width="2" 
+          fill="none"/>
+    
+    <!-- 上传箭头 -->
+    <path d="M32 44V28M32 28L26 34M32 28L38 34" 
+          stroke="#4f46e5" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+</svg> 

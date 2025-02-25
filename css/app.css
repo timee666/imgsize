@@ -1,0 +1,13 @@
+/* 基础样式 */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/layout.css';
+
+/* 组件样式 */
+@import 'components/navbar.css';
+@import 'components/hero.css';
+@import 'components/upload.css';
+@import 'components/editor.css';
+@import 'components/platform-presets.css';
+@import 'components/footer.css';
+@import 'components/legal.css';

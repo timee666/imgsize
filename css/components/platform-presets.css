@@ -1,0 +1,519 @@
+/* 平台预设区域 */
+.preset-section {
+    margin-bottom: 3rem;
+}
+
+.preset-section:last-child {
+    margin-bottom: 0;
+}
+
+/* 平台头部样式 */
+.platform-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.platform-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.platform-info i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.platform-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* 下载全部按钮 */
+.btn-download-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-download-all:hover {
+    background: var(--primary-dark);
+}
+
+/* 预设网格布局 */
+.preset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 预设项样式 */
+.preset-item {
+    background: var(--bg-primary);
+    border-radius: var(--border-radius-md);
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.preset-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* 预览框基础样式 */
+.platform-presets .preset-grid .preset-item .preview-box {
+    position: relative;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-sm);
+    padding: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+/* 所有预览框都应该保持其原始比例 */
+.preset-item .preview-box {
+    position: relative;
+}
+
+/* 设置预览框的宽高比 */
+.preset-item .preview-box::before {
+    content: '';
+    display: block;
+    padding-top: var(--aspect-ratio);
+}
+
+/* 图片容器 */
+.preset-item .preview-box {
+    position: relative;
+}
+
+/* 图片样式 */
+.platform-presets .preset-grid .preset-item .preview-box .preview-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* 特定尺寸的宽高比 */
+/* 微信预设 */
+.preset-item[data-size="240x240"] .preview-box {
+    --aspect-ratio: calc(240 / 240 * 100%);
+}
+
+.preset-item[data-size="900x383"] .preview-box {
+    --aspect-ratio: calc(383 / 900 * 100%);
+}
+
+.preset-item[data-size="200x200"] .preview-box {
+    --aspect-ratio: calc(200 / 200 * 100%);
+}
+
+.preset-item[data-size="600x600"] .preview-box {
+    --aspect-ratio: calc(600 / 600 * 100%);
+}
+
+.preset-item[data-size="1080x300"] .preview-box {
+    --aspect-ratio: calc(300 / 1080 * 100%);
+}
+
+.preset-item[data-size="2080x1260"] .preview-box {
+    --aspect-ratio: calc(1260 / 2080 * 100%);
+}
+
+.preset-item[data-size="1080x608"] .preview-box {
+    --aspect-ratio: calc(608 / 1080 * 100%);
+}
+
+/* Facebook预设 */
+.preset-item[data-size="180x180"] .preview-box {
+    --aspect-ratio: calc(180 / 180 * 100%);
+}
+
+.preset-item[data-size="820x312"] .preview-box {
+    --aspect-ratio: calc(312 / 820 * 100%);
+}
+
+.preset-item[data-size="1200x630"] .preview-box {
+    --aspect-ratio: calc(630 / 1200 * 100%);
+}
+
+.preset-item[data-size="1920x1080"] .preview-box {
+    --aspect-ratio: calc(1080 / 1920 * 100%);
+}
+
+.preset-item[data-size="1080x1920"] .preview-box {
+    --aspect-ratio: calc(1920 / 1080 * 100%);
+}
+
+.preset-item[data-size="1640x856"] .preview-box {
+    --aspect-ratio: calc(856 / 1640 * 100%);
+}
+
+/* 头像等方形图片的特殊处理 */
+.preset-item[data-size="180x180"] .preview-box,
+.preset-item[data-size="200x200"] .preview-box,
+.preset-item[data-size="240x240"] .preview-box {
+    --aspect-ratio: 100%;
+}
+
+.preset-item[data-size="180x180"] .preview-image,
+.preset-item[data-size="200x200"] .preview-image,
+.preset-item[data-size="240x240"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* 预设信息样式 */
+.preset-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.preset-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* 尺寸信息样式 */
+.size-info {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.size-label {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-sm);
+}
+
+/* 描述文本样式 */
+.preset-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 下载按钮样式 */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+    background: var(--primary-dark);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .platform-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .preset-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* 小屏幕单列显示 */
+@media (max-width: 480px) {
+    .preset-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platform-info h3 {
+        font-size: 1.125rem;
+    }
+}
+
+/* 特定尺寸的宽高比 */
+/* Instagram预设 */
+.preset-item[data-size="320x320"] .preview-box {
+    --aspect-ratio: calc(320 / 320 * 100%);
+}
+
+.preset-item[data-size="1080x1080"] .preview-box {
+    --aspect-ratio: calc(1080 / 1080 * 100%);
+}
+
+.preset-item[data-size="1080x1350"] .preview-box {
+    --aspect-ratio: calc(1350 / 1080 * 100%);
+}
+
+/* 淘宝预设 */
+.preset-item[data-size="800x800"] .preview-box {
+    --aspect-ratio: calc(800 / 800 * 100%);
+}
+
+.preset-item[data-size="750x375"] .preview-box {
+    --aspect-ratio: calc(375 / 750 * 100%);
+}
+
+.preset-item[data-size="400x400"] .preview-box {
+    --aspect-ratio: calc(400 / 400 * 100%);
+}
+
+.preset-item[data-size="750x422"] .preview-box {
+    --aspect-ratio: calc(422 / 750 * 100%);
+}
+
+/* 亚马逊预设 */
+.preset-item[data-size="2000x2000"] .preview-box {
+    --aspect-ratio: calc(2000 / 2000 * 100%);
+}
+
+.preset-item[data-size="500x500"] .preview-box {
+    --aspect-ratio: calc(500 / 500 * 100%);
+}
+
+.preset-item[data-size="3000x600"] .preview-box {
+    --aspect-ratio: calc(600 / 3000 * 100%);
+}
+
+.preset-item[data-size="970x600"] .preview-box {
+    --aspect-ratio: calc(600 / 970 * 100%);
+}
+
+/* 对于所有方形图片的通用处理 */
+.preset-item[data-size="320x320"] .preview-image,
+.preset-item[data-size="1080x1080"] .preview-image,
+.preset-item[data-size="800x800"] .preview-image,
+.preset-item[data-size="400x400"] .preview-image,
+.preset-item[data-size="2000x2000"] .preview-image,
+.preset-item[data-size="500x500"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* 对于auto高度的图片特殊处理 */
+.preset-item[data-size$="xauto"] .preview-box {
+    min-height: 200px;
+}
+
+/* 微博预设 */
+.preset-item[data-size="920x300"] .preview-box {
+    --aspect-ratio: calc(300 / 920 * 100%);
+}
+
+.preset-item[data-size="1080x607"] .preview-box {
+    --aspect-ratio: calc(607 / 1080 * 100%);
+}
+
+.preset-item[data-size="200x200"] .preview-box {
+    --aspect-ratio: calc(200 / 200 * 100%);
+}
+
+.preset-item[data-size="1080x1080"] .preview-box {
+    --aspect-ratio: calc(1080 / 1080 * 100%);
+}
+
+.preset-item[data-size="1080x1920"] .preview-box {
+    --aspect-ratio: calc(1920 / 1080 * 100%);
+}
+
+/* eBay预设 */
+.preset-item[data-size="1600x1600"] .preview-box {
+    --aspect-ratio: calc(1600 / 1600 * 100%);
+}
+
+.preset-item[data-size="500x500"] .preview-box {
+    --aspect-ratio: calc(500 / 500 * 100%);
+}
+
+.preset-item[data-size="1200x270"] .preview-box {
+    --aspect-ratio: calc(270 / 1200 * 100%);
+}
+
+.preset-item[data-size="300x300"] .preview-box {
+    --aspect-ratio: calc(300 / 300 * 100%);
+}
+
+.preset-item[data-size="150x150"] .preview-box {
+    --aspect-ratio: calc(150 / 150 * 100%);
+}
+
+/* 添加方形图片到通用处理 */
+.preset-item[data-size="1600x1600"] .preview-image,
+.preset-item[data-size="300x300"] .preview-image,
+.preset-item[data-size="150x150"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* 印刷尺寸预设 */
+.preset-item[data-size="2480x3508"] .preview-box {
+    --aspect-ratio: calc(3508 / 2480 * 100%); /* A4 */
+}
+
+.preset-item[data-size="1039x697"] .preview-box {
+    --aspect-ratio: calc(697 / 1039 * 100%); /* 名片 */
+}
+
+.preset-item[data-size="3508x4961"] .preview-box {
+    --aspect-ratio: calc(4961 / 3508 * 100%); /* A3 */
+}
+
+.preset-item[data-size="4961x7016"] .preview-box {
+    --aspect-ratio: calc(7016 / 4961 * 100%); /* A2 */
+}
+
+.preset-item[data-size="2480x1748"] .preview-box {
+    --aspect-ratio: calc(1748 / 2480 * 100%); /* 三折页 */
+}
+
+/* 印刷尺寸的图片显示方式 */
+.preset-item[data-size="2480x3508"] .preview-image,
+.preset-item[data-size="1039x697"] .preview-image,
+.preset-item[data-size="3508x4961"] .preview-image,
+.preset-item[data-size="4961x7016"] .preview-image,
+.preset-item[data-size="2480x1748"] .preview-image {
+    object-fit: contain;
+    padding: 0.5rem;
+    background: white; /* 添加白色背景以模拟纸张 */
+}
+
+/* Twitter预设 */
+.preset-item[data-size="400x400"] .preview-box {
+    --aspect-ratio: calc(400 / 400 * 100%);
+}
+
+.preset-item[data-size="1500x500"] .preview-box {
+    --aspect-ratio: calc(500 / 1500 * 100%);
+}
+
+.preset-item[data-size="1600x900"] .preview-box {
+    --aspect-ratio: calc(900 / 1600 * 100%);
+}
+
+.preset-item[data-size="1200x628"] .preview-box {
+    --aspect-ratio: calc(628 / 1200 * 100%);
+}
+
+/* 添加Twitter头像到方形图片通用处理 */
+.preset-item[data-size="400x400"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* 小红书预设 */
+.preset-item[data-size="1080x1440"] .preview-box {
+    --aspect-ratio: calc(1440 / 1080 * 100%);
+}
+
+/* 小红书方形笔记已经在前面的方形图片处理中包含了 */
+.preset-item[data-size="1080x1080"] .preview-box {
+    --aspect-ratio: calc(1080 / 1080 * 100%);
+}
+
+/* 添加小红书方形笔记到方形图片通用处理 */
+.preset-item[data-size="1080x1080"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* YouTube预设 */
+.preset-item[data-size="2560x1440"] .preview-box {
+    --aspect-ratio: calc(1440 / 2560 * 100%); /* 频道封面 */
+}
+
+.preset-item[data-size="1280x720"] .preview-box {
+    --aspect-ratio: calc(720 / 1280 * 100%); /* 视频缩略图 */
+}
+
+.preset-item[data-size="800x800"] .preview-box {
+    --aspect-ratio: calc(800 / 800 * 100%); /* 频道头像 */
+}
+
+/* 添加频道头像到方形图片通用处理 */
+.preset-item[data-size="800x800"] .preview-image {
+    object-fit: contain;
+    padding: 1rem;
+    position: relative;
+}
+
+/* 加载状态样式 */
+.preview-box.loading {
+    position: relative;
+    background: var(--bg-secondary);
+}
+
+.preview-box.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 3px solid var(--bg-primary);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 图片淡入效果 */
+.preview-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.preview-image[src] {
+    opacity: 1;
+}
+
+/* 错误状态样式 */
+.preview-box.error::after {
+    content: '加载失败';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--error-color);
+    font-size: 0.875rem;
+} 

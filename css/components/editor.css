@@ -1,0 +1,505 @@
+/* 编辑器布局 */
+.editor {
+    padding-top: 2rem;
+}
+
+.editor-layout {
+    align-items: start;
+    gap: var(--spacing-xl);
+}
+
+.upload-section,
+.editor-section {
+    background: var(--bg-primary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+/* 编辑器控件 */
+.editor-controls {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.control-group {
+    margin-bottom: 0.5rem;
+    padding: 1.25rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    width: 100%;
+}
+
+.control-group:last-child {
+    margin-bottom: 0;
+}
+
+.control-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+/* Resize Mode */
+.resize-mode {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+/* Dimension Inputs */
+.dimension-inputs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-group {
+    flex: 1;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.input-with-unit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-with-unit input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-primary);
+}
+
+.unit-select {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-primary);
+}
+
+/* Lock Ratio Button */
+.btn-lock {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    margin-top: 1.5rem;
+}
+
+.btn-lock.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Percentage Mode */
+.slider-container,
+.quality-slider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* 统一所有滑块的样式 */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* 统一信息显示样式 */
+.scale-value,
+.quality-value,
+.size-info {
+    min-width: 3rem;
+    text-align: right;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* 调整百分比模式的布局 */
+.slider-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    gap: 0.75rem;
+}
+
+.size-info {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Export Settings */
+.format-select,
+.quality-control,
+.resolution-control {
+    margin-bottom: 1rem;
+}
+
+.format-select select,
+.resolution-control select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-primary);
+    margin-top: 0.5rem;
+}
+
+.quality-slider input[type="range"] {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+}
+
+.quality-value {
+    min-width: 3rem;
+    text-align: right;
+    color: var(--text-secondary);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+/* Custom DPI Input */
+.custom-dpi {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-primary);
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    .control-group {
+        background: var(--bg-tertiary);
+    }
+}
+
+/* 预览区域 */
+.preview-container {
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.preview-container canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 确保面板在隐藏时不占用空间 */
+.editor-panel[hidden] {
+    display: none;
+}
+
+/* 确保百分比模式和维度模式宽度一致 */
+.dimensions-mode,
+.percentage-mode {
+    width: 100%;
+}
+
+/* 输入控件统一样式 */
+.input-with-unit,
+.format-select select,
+.resolution-control select,
+.quality-slider,
+.slider-container {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* 确保所有标签样式统一 */
+.input-group label,
+.format-select label,
+.quality-control label,
+.resolution-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* Image Information */
+.image-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+}
+
+.info-label {
+    color: var(--text-secondary);
+    min-width: 5rem;
+}
+
+.info-value {
+    color: #666;
+}
+
+.info-note {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    font-style: italic;
+    position: relative;
+    cursor: help;
+}
+
+.tooltip-container {
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 0.75rem;
+    box-shadow: var(--shadow-md);
+    font-style: normal;
+    font-size: 0.75rem;
+    color: var(--text-primary);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip p {
+    margin: 0 0 0.5rem 0;
+}
+
+.tooltip ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.tooltip li {
+    margin: 0.25rem 0;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 添加小箭头 */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--bg-primary) transparent transparent transparent;
+}
+
+.quality-control {
+    margin-bottom: 1rem;
+}
+
+.control-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.control-header label {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.tooltip-container {
+    position: relative;
+    cursor: help;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tooltip-container i {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1;
+}
+
+.tooltip-container .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 0.75rem;
+    box-shadow: var(--shadow-md);
+    font-size: 0.75rem;
+    color: var(--text-primary);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip p {
+    margin: 0.5rem 0;
+}
+
+.tooltip ul {
+    margin: 0.25rem 0;
+    padding-left: 1.25rem;
+}
+
+.tooltip li {
+    margin: 0.25rem 0;
+    color: var(--text-secondary);
+}
+
+/* 添加小箭头 */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--bg-primary) transparent transparent transparent;
+}
+
+/* 当格式不支持质量调整时的样式 */
+.quality-control.disabled {
+    opacity: 0.6;
+    & input[type="range"],
+    & .quality-value {
+        pointer-events: none;
+    }
+}
+
+.quality-control.disabled .quality-value::after {
+    content: ' (not supported)';
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.format-support {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+.resolution-control {
+    margin-bottom: 1rem;
+}
+
+.physical-size {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.custom-dpi {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.info-size {
+    color: #666;
+    margin-left: 8px;
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* SVG 相关样式 */
+.svg-note {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-warning);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-warning);
+    font-size: 0.875rem;
+}
+
+/* 禁用的选项样式 */
+select option:disabled {
+    color: var(--text-disabled);
+    font-style: italic;
+} 

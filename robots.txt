@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /zh/
+Allow: /ja/
+
+Sitemap: https://imgsize.site/sitemap.xml
+
+# Disallow potentially sensitive directories
+Disallow: /app/
+Disallow: /system/
+Disallow: /writable/ 

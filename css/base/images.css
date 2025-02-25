@@ -1,0 +1,22 @@
+/* 添加图片懒加载样式 */
+.lazy-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+}
+
+/* 添加图片占位符样式 */
+.image-placeholder {
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder::after {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+} 

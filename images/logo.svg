@@ -1,0 +1,35 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 主裁剪工具形状 -->
+    <path d="M22 6H26C26.5523 6 27 6.44772 27 7V11" 
+          stroke="#3B82F6" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    
+    <!-- 裁剪框主体 -->
+    <path d="M21 11V21H11V11H21ZM21 9H11C9.9 9 9 9.9 9 11V21C9 22.1 9.9 23 11 23H21C22.1 23 23 22.1 23 21V11C23 9.9 22.1 9 21 9Z" 
+          fill="#3B82F6"/>
+    
+    <!-- 左下角手柄 -->
+    <path d="M5 21V25C5 25.5523 5.44772 26 6 26H10" 
+          stroke="#3B82F6" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    
+    <!-- 连接线 -->
+    <path d="M26 6L6 26" 
+          stroke="#3B82F6" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    
+    <!-- 添加渐变效果 -->
+    <defs>
+        <linearGradient id="logoGradient" x1="6" y1="6" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#60A5FA"/>
+            <stop offset="100%" stop-color="#3B82F6"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- 使用渐变填充 -->
+    <path d="M21 11V21H11V11H21ZM21 9H11C9.9 9 9 9.9 9 11V21C9 22.1 9.9 23 11 23H21C22.1 23 23 22.1 23 21V11C23 9.9 22.1 9 21 9Z" 
+          fill="url(#logoGradient)"/>
+</svg> 

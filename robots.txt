@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Allow: /zh/
 Allow: /ja/
+Allow: /id/
+Allow: /bd/
+Allow: /es/
 
 Sitemap: https://imgsize.site/sitemap.xml
 

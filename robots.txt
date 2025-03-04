@@ -5,6 +5,13 @@ Allow: /ja/
 Allow: /id/
 Allow: /bd/
 Allow: /es/
+Allow: /ru/
+Allow: /fr/
+Allow: /tr/
+Allow: /de/
+Allow: /it/
+
+
 
 Sitemap: https://imgsize.site/sitemap.xml
 

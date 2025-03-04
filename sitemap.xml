@@ -10,6 +10,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it"/>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -22,6 +27,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id/blog"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd/blog"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es/blog"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru/blog"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr/blog"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr/blog"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de/blog"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it/blog"/>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
@@ -34,6 +44,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id/doc"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd/doc"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es/doc"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru/doc"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr/doc"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr/doc"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de/doc"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it/doc"/>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -46,6 +61,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id/terms"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd/terms"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es/terms"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru/terms"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr/terms"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr/terms"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de/terms"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it/terms"/>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -57,6 +77,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id/privacy"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd/privacy"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es/privacy"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru/privacy"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr/privacy"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr/privacy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de/privacy"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it/privacy"/>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -68,6 +93,11 @@
         <xhtml:link rel="alternate" hreflang="id" href="https://imgsize.site/id/about"/>
         <xhtml:link rel="alternate" hreflang="bd" href="https://imgsize.site/bd/about"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://imgsize.site/es/about"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imgsize.site/ru/about"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://imgsize.site/fr/about"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://imgsize.site/tr/about"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://imgsize.site/de/about"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://imgsize.site/it/about"/>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
